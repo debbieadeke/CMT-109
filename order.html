@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place an Order</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+    <h1>Order Your Cake</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="order-form">
+    <form action="submit_order.php" method="post" enctype="multipart/form-data">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="order-details">Order Details:</label>
+        <textarea id="order-details" name="order-details" required></textarea>
+
+        <label for="photo">Upload Inspiration Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+
+        <button type="submit">Place Order</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Debbie's Delights</p>
+</footer>
+
+</body>
+</html>
