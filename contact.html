@@ -10,35 +10,40 @@
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#about">About</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="order.html">Order</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <section class="contact">
-        <h1>Contact Us</h1>
-        <p>Have a question? Reach out to us!</p>
-        
-        <form action="contact_submit.php" method="POST">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-
-        <h2>Our Location</h2>
-        <p>📍 Nairobi, Kenya</p>
-        <p>📞 Call: +254 712 345 678</p>
-        <p>📧 Email: info@debbiesdelights.com</p>
+    <section class="contact-container">
+        <!-- Left Side: Contact Form -->
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+    
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    
+        <!-- Right Side: Location -->
+        <div class="contact-location">
+            <h2>Our Location</h2>
+            <p><strong>📌 Address:</strong> Nairobi, Kenya</p>
+            <p><strong>📞 Phone:</strong> +254116018633</p>
+            <p><strong>📧 Email:</strong> orders@debbiesdelights.com</p>            
+        </div>
     </section>
+    
 
     <footer>
         <p>© 2024 Debbie's Delights. All Rights Reserved.</p>
