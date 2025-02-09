@@ -3,44 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place an Order</title>
+    <title>Order - Debbie's Delights</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-<header>
-    <h1>Order Your Cake</h1>
-    <nav>
+    <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="order.html">Order</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-</header>
 
-<section class="order-form">
-    <form action="submit_order.php" method="post" enctype="multipart/form-data">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
+    <section class="order">
+        <h1>Place Your Order</h1>
+        <form action="submit_order.php" method="POST" enctype="multipart/form-data">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="phone">Phone Number:</label>
-        <input type="text" id="phone" name="phone" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="order-details">Order Details:</label>
-        <textarea id="order-details" name="order-details" required></textarea>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
 
-        <label for="photo">Upload Inspiration Photo:</label>
-        <input type="file" id="photo" name="photo" accept="image/*">
+            <label for="product">What would you like to order?</label>
+            <textarea id="product" name="product" rows="3" required></textarea>
 
-        <button type="submit">Place Order</button>
-    </form>
-</section>
+            <label for="inspo">Upload an Inspiration Photo:</label>
+            <input type="file" id="inspo" name="inspo" accept="image/*">
 
-<footer>
-    <p>&copy; 2024 Debbie's Delights</p>
-</footer>
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
 
+    <footer>
+        <p>© 2024 Debbie's Delights. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

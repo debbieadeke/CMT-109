@@ -1,75 +1,140 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #001f3f;
-    color: #ffffff;
-    text-align: center;
     margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark gray text for readability */
+    text-align: center;
 }
 
-header {
-    background-color: #fb857f;
-    padding: 20px;
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the links */
+    align-items: center;
+    padding: 15px 0;
+    background-color: #001f3f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-h1 {
-    color: #ffffff;
-}
-
-nav ul {
+.navbar ul {
     list-style: none;
+    display: flex;
+    gap: 30px; /* Adjust spacing between links */
     padding: 0;
 }
 
-nav ul li {
+.navbar ul li {
     display: inline;
-    margin: 0 15px;
 }
 
-nav ul li a {
-    color: #001f3f;
+.navbar ul li a {
     text-decoration: none;
+    color: #fb857f;
     font-weight: bold;
+    font-size: 18px; /* Adjust text size */
 }
 
+
+/* Hero Section */
 .hero {
-    padding: 50px;
-    background: #fb857f;
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #001f3f; /* Dark blue text */
 }
 
-.btn {
-    background: #001f3f;
-    color: #ffffff;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
     padding: 10px 20px;
-    text-decoration: none;
     border-radius: 5px;
 }
 
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background: #ffffff;
+    color: #333;
+}
+
+/* Products Section */
 .products {
+    padding: 50px 20px;
+}
+
+.menu-grid {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
 }
 
-.product-item {
-    background: #fb857f;
-    padding: 10px;
+.menu-item {
+    background: #f9f9f9; /* Light gray for product cards */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
     border-radius: 10px;
 }
 
-.order-form {
-    padding: 20px;
+/* Order Section */
+.order {
+    padding: 50px 20px;
     background: #ffffff;
-    color: #001f3f;
+    color: #333;
+}
+
+.order form {
     max-width: 400px;
     margin: auto;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-footer {
-    background: #fb857f;
+.order input, .order textarea {
     padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+}
+
+.order button {
+    background: #001f3f; /* Dark blue button */
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.order button:hover {
+    background: #fb857f; /* Light pink hover */
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+}
+
+/* Footer */
+footer {
+    background: #f9f9f9; /* Light gray footer */
+    padding: 10px;
+    color: #333;
+    text-align: center;
 }
