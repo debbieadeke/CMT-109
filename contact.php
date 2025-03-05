@@ -14,8 +14,8 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#about">About</a></li>
             <li><a href="products.html">Products</a></li>
-            <li><a href="order.html">Order</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="order.php">Order</a></li>
+            <li><a href="contact.php">Contact</a></li>
         </ul>
     </nav>
 
@@ -23,15 +23,15 @@
         <!-- Left Side: Contact Form -->
         <div class="contact-form">
             <h2>Contact Us</h2>
-            <form>
+            <form action="process_contact.php" method="POST">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="Enter your full name" required>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
     
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
     
                 <label for="message">Message</label>
-                <textarea id="message" placeholder="Enter your message" required></textarea>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
     
                 <button type="submit">Send Message</button>
             </form>
