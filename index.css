@@ -12,41 +12,27 @@ body {
 }
 
 /* Navbar */
+/* Navbar Styling */
+.navbar-brand{
+    color: white !important;
+    font-weight: bold;
+}
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
-    background-color: #001f3f;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    background-color: #001f3f !important;
 }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 30px; 
-    padding: 0;
+.navbar .nav-link {
+    color: white !important;
+    transition: color 0.3s ease-in-out;
 }
 
-.navbar ul li {
-    display: inline;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #fb857f;
+/* Active Tab Styling */
+.navbar .nav-link.active, 
+.navbar .nav-link:hover {
+    color: #fb857f !important;
     font-weight: bold;
-    font-size: 18px; 
 }
-.navbar a.active {
-    color: #ffffff; /* Change color to match your theme */
-    font-weight: bold;
-    border-bottom: 2px solid #ffffff;
-}
+
 
 
 /* Hero Section */
@@ -118,144 +104,23 @@ body {
 }
 
 /* Products Section */
-.products {
-    padding: 70px 20px;
-}
 
-.menu-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.menu-item {
-    background: #f8f8f8;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    width: 300px; 
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.menu-item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-
-/* Order Section */
-.order {
-    padding: 90px 20px;
-    background: #ffffff;
-    color: #333;
-}
-
-.order form {
-    max-width: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.order input, .order textarea {
-    padding: 10px;
-    border: 1px solid #ddd; 
-    border-radius: 5px;
-}
-
-.order button {
-    background: #001f3f; 
-    color: #ffffff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.order button:hover {
-    background: #fb857f; 
-}
 
 /* Contact Section */
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 10%;
-    gap: 40px;
-}
-
-/* Left Section - Contact Form */
-.contact-form {
-    flex: 1;
-    background: #f9f9f9;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #001f3f;
-}
-
-.contact-form label {
-    display: block;
-    font-weight: bold;
-    margin-top: 15px;
-    color: #001f3f;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact-form button {
-    width: 100%;
-    background: #fb857f;
-    color: white;
+#sendmessage {
+    background-color: #fb857f !important;
     border: none;
-    padding: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 15px;
-    border-radius: 5px;
+    color: white; /* Ensures the text is visible */
 }
-
-/* Right Section - Location */
-.contact-location {
-    flex: 1;
-    text-align: center;
+#sendmessage:hover {
+    background-color: #e06b6b !important; /* Slightly darker pink on hover */
 }
-
-.contact-location h2 {
-    margin-bottom: 20px;
-    color: #001f3f;
-}
-
-.contact-location iframe {
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-    border: none;
-}
-
 
 /* Footer */
-footer {
-    background: #f9f9f9; 
-    padding: 10px;
-    color: #333;
+.footer {
+    background-color: #001f3f !important;
+    color: white;
     text-align: center;
+    padding: 15px 0;
+    width: 100%;
 }
