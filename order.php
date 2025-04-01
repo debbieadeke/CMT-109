@@ -39,6 +39,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.php">Contact Us</a>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="admin_login.php">Log in</a></li>
+
                 </ul>
             </div>
         </div>
@@ -50,8 +52,8 @@
                 <div class="card shadow">
                     <div class="card-body">
                         <h2 class="text-center">Place your order</h2>
-                        <form action="process_contact.php" method="POST">
-                            <div class="mb-3">
+                        <form action="process_order.php" method="POST" enctype="multipart/form-data">
+                        <div class="mb-3">
                                 <label for="name" class="form-label">Full Name</label>
                                 <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
                             </div>
@@ -63,8 +65,7 @@
 
                             <div class="mb-3">
                                 <label for="phone" class="form-label">Phone Number</label>
-                                <textarea id="phone" name="phone" class="form-control" placeholder="Enter your message" required></textarea>
-                            </div>
+                                <input type="text" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>                            </div>
 
                             <div class="mb-3">
                                 <label for="product">What would you like to order?</label>
